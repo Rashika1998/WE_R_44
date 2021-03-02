@@ -197,6 +197,7 @@ namespace GROUP_WE_R_44_TIME_TABLE
             this.Name = "FormStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormStudent";
+            this.Load += new System.EventHandler(this.FormStudent_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

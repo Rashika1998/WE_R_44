@@ -61,6 +61,11 @@ namespace GROUP_WE_R_44_TIME_TABLE
 
             _parent.Display();
         }
-        
+
+        //Student update function need to be implemented
+        private void FormStudent_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
