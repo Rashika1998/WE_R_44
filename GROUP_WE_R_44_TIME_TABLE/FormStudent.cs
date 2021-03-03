@@ -14,6 +14,7 @@ namespace GROUP_WE_R_44_TIME_TABLE
     {
 
         private readonly FormStudentInfo _parent;
+        public string id, name, reg, @class, section;
 
 
         public FormStudent(FormStudentInfo parent)
@@ -22,6 +23,26 @@ namespace GROUP_WE_R_44_TIME_TABLE
             _parent = parent;
             
         }
+
+        public void UpdateInfo()
+        {
+
+            lbltext.Text = "Update Student";
+            btnSave.Text = "Update";
+            txtName.Text = name;
+            txtReg.Text = reg;
+            txtClass.Text = @class;
+            txtSection.Text = section;
+
+        }
+
+
+        public void SaveInfo()
+        {
+            lbltext.Text = "Add Student";
+            btnSave.Text = "Save";
+        }
+
 
 
         public void Clear()
@@ -57,6 +78,11 @@ namespace GROUP_WE_R_44_TIME_TABLE
                 Student std = new Student(txtName.Text.Trim(), txtReg.Text.Trim(), txtClass.Text.Trim(), txtSection.Text.Trim());
                 DbStudent.AddStudent(std);
                 Clear();
+            }
+            if(btnSave.Text == "Update")
+            {
+                Student std = new Student(txtName.Text.Trim(), txtReg.Text.Trim(), txtClass.Text.Trim(), txtSection.Text.Trim());
+                DbStudent.UpdateStudent(std, id);
             }
 
             _parent.Display();

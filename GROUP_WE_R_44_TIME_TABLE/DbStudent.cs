@@ -62,7 +62,7 @@ namespace GROUP_WE_R_44_TIME_TABLE
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
 
-
+            cmd.Parameters.Add("@StudentID", MySqlDbType.VarChar).Value = id;
             cmd.Parameters.Add("@StudentName", MySqlDbType.VarChar).Value = std.Name;
             cmd.Parameters.Add("@StudentReg", MySqlDbType.VarChar).Value = std.Reg;
             cmd.Parameters.Add("@StudentClass", MySqlDbType.VarChar).Value = std.Class;
