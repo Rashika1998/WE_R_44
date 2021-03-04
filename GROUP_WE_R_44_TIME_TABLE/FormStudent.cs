@@ -36,6 +36,12 @@ namespace GROUP_WE_R_44_TIME_TABLE
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.ShowDialog();
+
+        }
 
         public void SaveInfo()
         {
