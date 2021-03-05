@@ -32,14 +32,14 @@ namespace GROUP_WE_R_44_TIME_TABLE
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTagName = new System.Windows.Forms.TextBox();
-            this.txtTagCode = new System.Windows.Forms.TextBox();
-            this.relatedTagBox = new System.Windows.Forms.ComboBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.relatedTagBox = new System.Windows.Forms.ComboBox();
+            this.txtTagCode = new System.Windows.Forms.TextBox();
+            this.txtTagName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -80,65 +80,19 @@ namespace GROUP_WE_R_44_TIME_TABLE
             this.panel2.Size = new System.Drawing.Size(916, 329);
             this.panel2.TabIndex = 0;
             // 
-            // label2
+            // btnClear
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label2.Location = new System.Drawing.Point(270, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tag Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label3.Location = new System.Drawing.Point(270, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tag Code";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label4.Location = new System.Drawing.Point(270, 114);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Related Tag";
-            // 
-            // txtTagName
-            // 
-            this.txtTagName.Location = new System.Drawing.Point(401, 9);
-            this.txtTagName.Name = "txtTagName";
-            this.txtTagName.Size = new System.Drawing.Size(234, 20);
-            this.txtTagName.TabIndex = 1;
-            // 
-            // txtTagCode
-            // 
-            this.txtTagCode.Location = new System.Drawing.Point(401, 61);
-            this.txtTagCode.Name = "txtTagCode";
-            this.txtTagCode.Size = new System.Drawing.Size(234, 20);
-            this.txtTagCode.TabIndex = 2;
-            // 
-            // relatedTagBox
-            // 
-            this.relatedTagBox.FormattingEnabled = true;
-            this.relatedTagBox.Items.AddRange(new object[] {
-            "Lecture",
-            "Tutorial",
-            "Lab"});
-            this.relatedTagBox.Location = new System.Drawing.Point(401, 114);
-            this.relatedTagBox.Name = "relatedTagBox";
-            this.relatedTagBox.Size = new System.Drawing.Size(234, 21);
-            this.relatedTagBox.TabIndex = 3;
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(355, 223);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(115, 38);
+            this.btnClear.TabIndex = 5;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
             // 
             // btnSave
             // 
@@ -153,20 +107,64 @@ namespace GROUP_WE_R_44_TIME_TABLE
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnClear
+            // relatedTagBox
             // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnClear.FlatAppearance.BorderSize = 0;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(355, 223);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(115, 38);
-            this.btnClear.TabIndex = 5;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
+            this.relatedTagBox.FormattingEnabled = true;
+            this.relatedTagBox.Location = new System.Drawing.Point(401, 114);
+            this.relatedTagBox.Name = "relatedTagBox";
+            this.relatedTagBox.Size = new System.Drawing.Size(234, 21);
+            this.relatedTagBox.TabIndex = 3;
+            this.relatedTagBox.SelectedIndexChanged += new System.EventHandler(this.relatedTagBox_SelectedIndexChanged);
+            // 
+            // txtTagCode
+            // 
+            this.txtTagCode.Location = new System.Drawing.Point(401, 61);
+            this.txtTagCode.Name = "txtTagCode";
+            this.txtTagCode.Size = new System.Drawing.Size(234, 20);
+            this.txtTagCode.TabIndex = 2;
+            // 
+            // txtTagName
+            // 
+            this.txtTagName.Location = new System.Drawing.Point(401, 9);
+            this.txtTagName.Name = "txtTagName";
+            this.txtTagName.Size = new System.Drawing.Size(234, 20);
+            this.txtTagName.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label4.Location = new System.Drawing.Point(270, 114);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 20);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Related Tag";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label3.Location = new System.Drawing.Point(270, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tag Code";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label2.Location = new System.Drawing.Point(270, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tag Name";
             // 
             // FormAddTag
             // 
