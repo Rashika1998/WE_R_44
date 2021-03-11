@@ -198,5 +198,11 @@
   <ItemGroup>
     <None Include="Resources\white-add-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-add-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-con.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

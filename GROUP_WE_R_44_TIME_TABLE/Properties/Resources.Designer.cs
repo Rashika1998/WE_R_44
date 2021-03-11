@@ -93,9 +93,29 @@ namespace GROUP_WE_R_44_TIME_TABLE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap search_con {
+            get {
+                object obj = ResourceManager.GetObject("search-con", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap white_add_icon {
             get {
                 object obj = ResourceManager.GetObject("white-add-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap white_add_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("white-add-icon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
