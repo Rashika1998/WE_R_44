@@ -13,7 +13,7 @@ namespace GROUP_WE_R_44_TIME_TABLE
     {
         public static MySqlConnection GetConnection() 
         {
-            string sql = "datasource=localhost; port=3306; username=root; password=issa123; database=group_44_sliit_itpm";
+            string sql = "datasource=localhost; port=3306; username=root; password=; database=group_44_sliit_itpm";
             MySqlConnection con = new MySqlConnection(sql);
 
             try
