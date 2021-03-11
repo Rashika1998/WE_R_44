@@ -99,11 +99,29 @@
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="DbStudent.cs" />
+    <Compile Include="FormAddLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddLocation.Designer.cs">
+      <DependentUpon>FormAddLocation.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddTag.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAddTag.Designer.cs">
       <DependentUpon>FormAddTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageLocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageLocations.Designer.cs">
+      <DependentUpon>FormManageLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatistics.Designer.cs">
+      <DependentUpon>FormStatistics.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStudent.cs">
       <SubType>Form</SubType>
@@ -129,8 +147,17 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAddLocation.resx">
+      <DependentUpon>FormAddLocation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAddTag.resx">
       <DependentUpon>FormAddTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageLocations.resx">
+      <DependentUpon>FormManageLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatistics.resx">
+      <DependentUpon>FormStatistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStudent.resx">
       <DependentUpon>FormStudent.cs</DependentUpon>
@@ -143,14 +170,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -167,6 +188,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-edit-icon-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-add-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipart171655.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistics-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistics-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipart1716551.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
