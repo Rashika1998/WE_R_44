@@ -117,12 +117,6 @@
     <Compile Include="FormManageLocations.Designer.cs">
       <DependentUpon>FormManageLocations.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormStatistics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormStatistics.Designer.cs">
-      <DependentUpon>FormStatistics.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,9 +155,6 @@
     <EmbeddedResource Include="FormManageLocations.resx">
       <DependentUpon>FormManageLocations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormStatistics.resx">
-      <DependentUpon>FormStatistics.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormStudent.resx">
       <DependentUpon>FormStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,19 +190,13 @@
     <None Include="Resources\white-edit-icon-4.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\white-add-icon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\clipart171655.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Statistics-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Statistics-icon1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\clipart1716551.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-add-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
