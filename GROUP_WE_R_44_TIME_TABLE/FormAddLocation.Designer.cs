@@ -61,7 +61,7 @@ namespace GROUP_WE_R_44_TIME_TABLE
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::GROUP_WE_R_44_TIME_TABLE.Properties.Resources.clipart171655;
+           
             this.pictureBox1.Location = new System.Drawing.Point(12, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 40);
